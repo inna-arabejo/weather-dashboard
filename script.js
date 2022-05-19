@@ -53,10 +53,34 @@ $(document).ready(function () {
     if (uvi >= 6 && uvi <= 10) bgColor = "yellow"
     if (uvi >= 11) bgColor = "red"
     let uviEl = $("<p class='card-text'>")
-        .text(`UV Index: ${uvi}`)
-        .css({
-            "color": bgColor,
-            "background-color": "black"
+      .text(`UV Index: ${uvi}`)
+      .css({
+          "color": bgColor,
+          "background-color": "black"
+      })
+      cardHeader.append(nameEl);
+      cardBody.append(tempEl, windEl, humidEl, currentIcon, uviEl)
+      card.append(cardHeader, cardBody)
+      $("#currentWeather").append(card)
+      console.log("FIVEDAY DATA", data)
+  
+      data5Day.daily
+        .slice(1, 6)
+        .forEach((day) => {
+          let temp = day.temp.day;
+          let wind = day.wind_speed;
+          let humiditiy = day.humidity;
+          let date = new Date(day.dt * 1000)
+          card = $("<div class='card'>");
+          let cardBody = $("<div class='card-body'>");
+          let icon = $("<img>").attr("src", `https://openweathermap.org/img/wn/${day.weather[0].icon}@2x.png`)
+          let tempEl = $("<p class='card-text'>").text("Temperature: " + temp)
+          let windEl = $("<p class='card-text'>").text("Wind Speed: " + wind + " MPH")
+          let humidEl = $("<p class='card-text'>").text("Humidity: " + humiditiy + "%")
+          let dayEl = $("<p class='card-text'>").text(date.toLocaleDateString())
+          cardBody.append(tempEl, windEl, humidEl, dayEl, icon)
+          card.append(cardBody)
+          $("#fiveDayWeather").append(card)
         })
   }
 })
