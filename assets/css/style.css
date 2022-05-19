@@ -2,11 +2,26 @@ header {
   text-align: center;
   background: rgb(0, 0, 0, 0.4);
 }
-h1 {
-  color: white;
-}
 
 body {
   font-family: Georgia, 'Times New Roman', Times, serif;
   background-image: url('https://source.unsplash.com/1600x900/?weather');
+}
+
+h1 {
+  color: white;
+}
+
+.form-group {
+  background: rgba(0, 15, 83, 0.8);
+  color: aliceblue;
+  padding: 30px;
+  width: 100%;
+  max-width: 420px;
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  display: inline-block;
 }
