@@ -25,3 +25,20 @@ h1 {
   flex-direction: column;
   display: inline-block;
 }
+
+.container-row{
+  display: flex;
+  flex-direction: row;
+}
+
+.cards{
+  display: flex;
+  flex-direction: column;
+}
+
+.border {
+  background: rgba(255, 255, 255, 0.664);
+  color: rgb(0, 33, 61);
+  padding: 30px;
+  font-weight: 700;
+}
