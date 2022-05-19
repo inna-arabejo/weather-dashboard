@@ -34,5 +34,29 @@ $(document).ready(function () {
     let data5Day = await (await fetch(fiveDayUrl)).json()
 
     console.log("data from api", data)
+
+    let cityName = data.name;
+    let temp = data.main.temp;
+    let wind = data.wind.speed;
+    let humiditiy = data.main.humidity;
+    let uvi = data5Day.daily[0].uvi
+
+    let card = $("<div class='card'>");
+    let cardHeader = $("<div class='card-header'>");
+    let cardBody = $("<div class='card-body'>");
+    let currentIcon = $("<img>").attr("src", `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`)
+    let tempEl = $("<p class='card-text'>").text("Temperature: " + temp)
+    let windEl = $("<p class='card-text'>").text("Wind Speed: " + wind + " MPH")
+    let humidEl = $("<p class='card-text'>").text("Humidity: " + humiditiy + "%")
+    let nameEl = $("<p class='card-title'>").text(cityName)
+    let bgColor = "green"
+    if (uvi >= 6 && uvi <= 10) bgColor = "yellow"
+    if (uvi >= 11) bgColor = "red"
+    let uviEl = $("<p class='card-text'>")
+        .text(`UV Index: ${uvi}`)
+        .css({
+            "color": bgColor,
+            "background-color": "black"
+        })
   }
 })
