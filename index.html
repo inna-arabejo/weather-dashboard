@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+    <title>Daily Weather Forecast</title>
+  </head>
+  <body>
+
+    <!-- Header -->
+    <header>
+      <h1>Weather Dashboard</h1>
+    </header>
+
+    <!-- Form to search city -->
+    <form>
+      <div class="search">
+          <div class="container">
+              <div class="form-group">
+                  <label for="searchCity">
+                      <h3>Search For a City:</h3>
+                  </label>
+                  <input type="search" id="search">
+              </div>
+              <button type="submit" id="citySearch">Submit</button>
+          </div>
+        </div>
+      </div>
+    </form>
+
+    <!-- Search History -->
+    <div class="cards">
+        <div id="currentWeather" class="container">
+        </div>
+    </div>
+    <div class="cards border">
+        <div id="previousSearch" class="container">
+            <ul id = "list">
+
+            </ul>
+        </div>
+    </div>
+
+    <!-- 5-Day Forecast -->
+    <div class="cards">
+        <h2 class="form-group">Five Day Forecast</h2>
+        <div id="fiveDayWeather" class="container-row">
+
+        </div>
+    </div>
+
+
+
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <script src="./script.js"></script>
+    
+  </body>
+</html>

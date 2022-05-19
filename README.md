@@ -1,9 +1,11 @@
 # Weather Dashboard: Server-Side APIs
 
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
+
 ## Objective
 Create a weather dashboard that retrieves weather data for cities using the OpenWeather API. By utilizing this third-party API, we will be able to access the data and functionality to forecast current and future weather conditions of multiple cities. The purpose of this weather dashboard will allow a traveller to plan a trip accordingly and teach you as a developer to retrieve data from another application's API. 
 
-# Table of Contents
+## Table of Contents
 1. [Usage](#usage)
 2. [Deployed](#deployed)
 3. [Screenshots](#screenshots)
