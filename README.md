@@ -22,7 +22,7 @@ This program can be run through a browser to the the deployed application. Alter
 5. The browser should render the web page
 
 ## Deployed
-[Weather Dashboard Deployed Application](https://note-taker-inna.herokuapp.com/)
+[Weather Dashboard App](https://inna-arabejo.github.io/weather-dashboard/)
 
 ## Screenshots
 ![Weather Dashboard](./assets/images/weather-dashboard.jpg)
