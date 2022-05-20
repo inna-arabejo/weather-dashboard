@@ -9,9 +9,8 @@ Create a weather dashboard that retrieves weather data for cities using the Open
 1. [Usage](#usage)
 2. [Deployed](#deployed)
 3. [Screenshots](#screenshots)
-4. [Video](#video)
-5. [Questions](#questions)
-6. [Sources](#sources)
+4. [Questions](#questions)
+5. [Sources](#sources)
 
 ## Usage
 This program can be run through a browser to the the deployed application. Alternatively, to run this application locally you will need to:
@@ -26,13 +25,9 @@ This program can be run through a browser to the the deployed application. Alter
 [Weather Dashboard Deployed Application](https://note-taker-inna.herokuapp.com/)
 
 ## Screenshots
-![Weather Dashboard](./public/assets/images/landing-page.jpg)
-
-## Video
-[Weather Dashboard walkthrough video](https://youtu.be/4kne4SgtYfU)
-
-## License
- This project is covered under MIT.
+![Weather Dashboard](./assets/images/weather-dashboard.jpg)
+![Weather Dashboard](./assets/images/weather-search.jpg)
+![Weather Dashboard](./assets/images/walkthrough.gif)
 
 ## Questions
 For inquiries about the repo, you can find me through GitHub at [inna-arabejo](https://github.com/inna-arabejo). 
